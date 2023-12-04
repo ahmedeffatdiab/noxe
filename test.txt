@@ -1,0 +1,1 @@
+<i className='fas fa-spinner fa-spin fa-4x position-absolute top-50 start-50'></i>

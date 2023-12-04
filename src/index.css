@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Montserrat+Alternates&family=Titillium+Web&display=swap');
+:root{
+  --bg-color:#131722;
+  --main-font:'Montserrat Alternates', sans-serif;
+  --light-bg:#24baef;
+  --font-color:#fff;  
+}
+body {
+  background-color: var(--bg-color);
+  font-family: var(--main-font);
+  color:var(--font-color)
+}
+body{
+  margin:0;
+  
+}
+.details-image{
+  height:300px;
+}
+.detailsStyle{
+  background-color: rgba(128, 128, 128, 0.075);
+}
+.storyStyle{
+  min-height: 120px;
+}
+.color-body{
+  background-color:white;
+  height: 100vh;
+}
+.navColor{
+  color:white !important;
+}
+.logo{
+  height:60px;
+  width:60px;
+}
+.search{
+  position: relative;
+}
+.search input{
+  height:40px;
+  text-indent: 25px;
+  border-radius: 20px;
+}
+.search input:focus{
+  box-shadow: none;
+  border: 2px solid red;
+}
+.search .fa-search{
+  position: absolute;
+  top:12px;
+  left:16px;
+}
+.card{
+  position: relative;
+  transition: all 3s ease-in;
+  cursor: pointer;
+  overflow: hidden;
+  /* height: 300px; */
+}
+.card_image{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.card_overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.423);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all .5s linear;
+  opacity: 0;
+ 
+}
+.overlay_text{
+  color:white;
+  margin-top:60px
+}
+.card:hover .card_overlay{
+  top: 0%;
+  opacity: 1;
+}
+.brdr{
+  height:1px;
+  background-color: #a8a8a83d;
+}
+.card-img-top{
+  height:200px;
+}
+
+.offline{
+  background-color: #24baef;
+  color:gray;
+  position: fixed;
+  top:50%;
+  left:50%;
+  z-index:9999;
+  font-size:1.5rem;
+  padding:20px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.profile-info{
+  /* width:500px;
+  height:500px; */
+  background-image: linear-gradient(to bottom right, red, yellow);;
+  margin: auto;
+  border-radius: 20px;
+  
+}
+.profile-info img{
+  width:150px;
+  height: 150px;
+}
+/*  X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+  .w-SignAndLogin{
+    min-width: 100% !important;
+  }
+}
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+  .w-SignAndLogin{
+    max-width: 75% !important;
+  }
+ }
+
+/*  Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
+  .w-SignAndLogin{
+    max-width: 50% !important;
+  }
+ }
+
+/*  Large devices (desktops, less than 1200px) */
+@media (max-width: 1110px) { 
+  .w-SignAndLogin{
+    width: 50% !important;
+  }
+ }
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) { 
+  .w-SignAndLogin{
+    width: 50% !important;
+  }
+ }
